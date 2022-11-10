@@ -13,26 +13,45 @@
 </head>
 
 <body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="/resources/WorqHat.png" alt="WorqHat Logo" class="h-16 w-auto">
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5"></a>
+                <a class="mr-5"></a>
+                <a class="mr-5"></a>
+                <a class="mr-5"></a>
+            </nav>
+            <button type="button" id="logoutButton" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
     <div id="app">
-        <div class="imageBlock text-center w-full">
-            <img class="sm:w-full lg:w-1/2 lg:mx-auto" src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d" alt="Banner Image" />
+        <div class="imageBlock text-center w-full lg:w-3/4 grid grid-cols-3 gap-4 mb-12 mx-auto">
+            <img class="lg:mx-auto col-span-3 lg:col-span-2" src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d" alt="Banner Image" />
+
+            <section id="event-details-container" class="w-full lg:w-1/2 mx-auto my-auto col-span-3 lg:col-span-1">
+                <h1 class="text-3xl font-bold my-6">Firebase Meetup</h1>
+
+                <p class="mb-3 font-semibold text-lg"><i class="material-icons">calendar_today</i> November 17</p>
+                <p class="mb-3 font-semibold text-lg"><i class="material-icons">location_city</i> MIT WPU, Pune</p>
+                <!-- ADD THE RSVP BUTTON HERE -->
+            </section>
         </div>
 
-        <section id="event-details-container" class="w-full lg:w-1/2 mx-auto">
-            <h1 class="text-3xl font-bold my-6">Firebase Meetup</h1>
-
-            <p class="mb-3 font-semibold text-lg"><i class="material-icons">calendar_today</i> November 17</p>
-            <p class="mb-3 font-semibold text-lg"><i class="material-icons">location_city</i> MIT WPU, Pune</p>
-            <!-- ADD THE RSVP BUTTON HERE -->
-        </section>
 
         <hr />
 
-        <section id="firebaseui-auth-container"></section>
-
-        <section id="description-container">
-            <h2>What we'll be doing</h2>
-            <p>Join us for a day full of Firebase Workshops and Pizza!</p>
+        <section id="description-container" class="w-full lg:w-5/6 mt-3">
+            <h2 class="text-xl font-semibold mx-auto">What we'll be doing</h2>
+            <p>Join us for a day full of Firebase Hands-On Activities and Learnings!</p>
         </section>
 
         <section id="guestbook-container"></section>
