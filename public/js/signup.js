@@ -1,10 +1,10 @@
-var signupEmail = document.getElementById("signupEmail").value;
-var signupPassword = document.getElementById("signupPassword").value;
+const firebaseConfig = {
+    apiKey: "AIzaSyCr2yhhjBMrCohl8fIJvNqLStMjeB1usmo",
+    authDomain: "fir-meetup-template.firebaseapp.com",
+    projectId: "firebase-meetup-template",
+    storageBucket: "firebase-meetup-template.appspot.com",
+    messagingSenderId: "120951307608",
+    appId: "1:120951307608:web:22f29768e29d950a0af92d"
+};
 
-document.getElementById("submitSignup").addEventListener("click", function() {
-    // Handle the Signup submission and redirect over here
-});
-
-document.getElementById("googleSignup").addEventListener("click", function() {
-    // Handle the Google Signup and redirect over here
-});
+const app = initializeApp(firebaseConfig);
