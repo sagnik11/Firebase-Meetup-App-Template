@@ -32,3 +32,8 @@ function displayAttendants() {
 function displayConversations() {
 
 }
+
+// Save all the conversations to the database
+function saveMessages(){
+
+}
